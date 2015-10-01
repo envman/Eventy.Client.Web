@@ -1,0 +1,138 @@
+﻿@model dynamic
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="~/Content/style.css" rel="stylesheet">
+    <link href="~/Content/sidebar.css" rel="stylesheet">
+    <link href="~/Content/chat.css" rel="stylesheet">
+    <link href="~/Content/home.css" rel="stylesheet">
+
+    <title>JoinIn - Event Management</title>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav list-group">
+            <li class="sidebar-brand list-group-item-heading disabled">
+                <a class="disabled" href="#">
+                    <H2>JoinIn</H2>
+                </a>
+            </li>
+            <li class="list-group-item">
+                <a href="">Create Event</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">eTech LAN - November</a>
+            </li>
+            <li class="list-group-item">
+                <a href="#">eTech LAN - February</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+            <div class="panel panel-primary">
+                <div class="panel-heading">eTech LAN - November</div>
+                <div class="panel-body">
+                    This is the eTech LAN Event for November 2015!
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div>
+        <div class="col-md-offset-2 col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Schedule
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">09:00 - Arrival</li>
+                        <li class="list-group-item">10:00 - TF2</li>
+                        <li class="list-group-item">12:00 - Lunch</li>
+                        <li class="list-group-item">13:00 - Guns of Icarus Online</li>
+                        <li class="list-group-item">14:00 - Ace of Spades</li>
+                        <li class="list-group-item">15:00 - RTS Time</li>
+                        <li class="list-group-item">17:00 - Counter Strike: Global Offensive</li>
+                        <li class="list-group-item">19:00 - Left 4 Dead 2</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="panel panel-primary">
+                <div class="panel-body chat-panel-body">
+                    <ul class="chat">
+                        <li class="left clearfix">
+                            <span class="chat-img pull-left">
+                                <span class="chat-glyph glyphicon glyphicon-comment"></span>
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Steve Tsang</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>12 mins ago
+                                    </small>
+                                </div>
+                                <p>
+                                    Hey Guys!
+                                </p>
+                            </div>
+                        </li>
+                        <li class="right clearfix">
+                            <span class="chat-img pull-right">
+                                <span class="chat-glyph glyphicon glyphicon-comment"></span>
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <small class=" text-muted"><span class="glyphicon glyphicon-time"></span>13 mins ago</small>
+                                    <strong class="pull-right primary-font">Rob Gill</strong>
+                                </div>
+                                <p>
+                                    Hey STEEE!
+                                </p>
+                            </div>
+                        </li>
+                        <li class="left clearfix">
+                            <span class="chat-img pull-left">
+                                <span class="chat-glyph glyphicon glyphicon-comment"></span>
+                            </span>
+                            <div class="chat-body clearfix">
+                                <div class="header">
+                                    <strong class="primary-font">Harry</strong> <small class="pull-right text-muted">
+                                        <span class="glyphicon glyphicon-time"></span>14 mins ago
+                                    </small>
+                                </div>
+                                <p>
+                                    Can someone bring me a spare mouse?
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary btn-sm" id="btn-chat">Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
